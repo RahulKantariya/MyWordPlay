@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def gettext():
-    return render_template('./templates/index.html')
+    return render_template('index.html')
 
 @app.route('/translator',methods=['POST','GET'])
 def translator():
